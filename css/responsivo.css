@@ -1,0 +1,71 @@
+
+@media (max-width: 915px) {
+    .textoMovel {
+        display: block;
+    }
+
+    .dinamicoContainer {
+        display: none;
+    }
+
+    .paiContainer {
+        width: 75vw;
+        height: 75vh;
+    }
+
+    .form {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .formCadastro {
+        transform: translate(-100%);
+        background-color: var(--corPrincipal);
+    }
+
+    .formButton {
+        background-color: var(--corPrincipal);
+        color: var(--corSecundaria);
+    }
+
+    .textoMovel {
+        color: var(--corPrincipal);
+        font-size: 1.1rem;
+    }
+
+    .textoMovel a {
+        font-weight: 800;
+    }
+
+    .paiContainer.trocar .formTitulo,
+    .paiContainer.trocar .formTexto,
+    .paiContainer.trocar .textoMovel,
+    .paiContainer.trocar .textoMovel a {
+        color: var(--corSecundaria);
+    }
+
+    .paiContainer.trocar .formButton {
+        border: 2px solid var(--corSecundaria);
+    }
+
+    .paiContainer.trocar .formCadastro {
+        transform: translateX(0%);
+    }
+}
+/* layout responsivo geral */
+
+@media (max-width: 480px) {
+    .paiContainer {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+}
+/* dispositivos móveis */
+
+@media (min-height: 800px) and (max-width: 915px) {
+    .form{
+        padding: 100px 0px;
+    }
+}
+/* melhor distribuição dos elementos em dispositivos com altura maior que 800px que receberão o layout responsivo*/

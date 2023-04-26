@@ -1,0 +1,22 @@
+:root {
+    --fundo: #A3B18A;
+    --sombra: #6f8567bb;
+    --textoClaro: #ffffff;
+    --textoEscuro: #3A5A40;
+    --corSecundaria: #ffffff;
+    --corPrincipal: #3A5A40;
+    --inputseBotoes: #F3F3F3;
+    --textoInputs: #6f8567;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--textoEscuro);
+}

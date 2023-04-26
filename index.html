@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f1ced6f25b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mainEstilo.css">
+    <link rel="stylesheet" href="./css/formEstilo.css">
+    <link rel="stylesheet" href="./css/dinamicoEstilo.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
+
+    <script src="./js/login.js" defer></script>
+    <title>Login/Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <div class="paiContainer" id="paiContainer">
+                <form class="form formCadastro">
+                    <h2 class="formTitulo">Criar conta</h2>
+
+                    <div class="formSocial">
+                        <a href="#" class="socialIcon"> <i class="fa-brands fa-facebook-f"></i> </a>
+                        <a href="#" class="socialIcon"> <i class="fa-brands fa-google"></i> </a>
+                        <a href="#" class="socialIcon"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    </div>
+
+                    <p class="formTexto">ou cadastre seu email</p>
+
+                    <div class="inputsContainer">
+                        <input type="text" class="input" placeholder="Nome">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="password" class="input" placeholder="Senha">
+                    </div>
+
+                    <button class="formButton">CADASTRAR</button>
+
+                    <p class="textoMovel">Já tem conta? 
+                        <a href="#" id="abrirLogin">Entrar</a>
+                    </p>
+                </form>
+
+                <form class="form formLogin">
+                    <h2 class="formTitulo">Entrar com</h2>
+
+                    <div class="formSocial">
+                        <a href="#" class="socialIcon"> <i class="fa-brands fa-facebook-f"></i> </a>
+                        <a href="#" class="socialIcon"> <i class="fa-brands fa-google"></i> </a>
+                        <a href="#" class="socialIcon"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    </div>
+
+                    <p class="formTexto">ou utilize sua conta</p>
+
+                    <div class="inputsContainer">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="password" class="input" placeholder="Senha">
+                    </div>
+
+                    <a href="#" class="formLink">Esqueci minha senha</a>
+
+                    <button class="formButton">ENTRAR</button>
+
+                    <p class="textoMovel">Não tem conta? 
+                        <a href="#" id="abrirCadatro" >Registre-se</a>
+                    </p>
+
+                </form>
+
+            <section class="dinamicoContainer">
+                <div class="dinamico">
+                    <h2 class="dinamicoTitulo">Já tem conta?</h2>
+                    <p class="dinamicoTexto">Para entrar na nossa plataforma faça login com suas informações</p>
+                    <button class="dinamicoButton"
+                    id="botaoEntrar"
+                    onclick="moverDinamico()">ENTRAR</button>
+                </div>
+
+                <div class="dinamico">
+                    <h2 class="dinamicoTitulo">Bem Vindo!</h2>
+                    <p class="dinamicoTexto">Faça seu cadastro para utilizar nossa plataforma e tenha acesso a catálogos e informações exclusivas!
+                    </p>
+                    <button class="dinamicoButton" id="botaoCadastrar" onclick="moverDinamico()">CADASTRAR</button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

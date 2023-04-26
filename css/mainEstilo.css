@@ -1,0 +1,17 @@
+main{
+    background-color: var(--fundo);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paiContainer {
+    position: relative;
+    height: 480px;
+    width: 768px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px var(--sombra);
+    overflow: hidden;
+    background-color: var(--corSecundaria);
+}
